@@ -14,7 +14,7 @@
 \begin{document}
 \maketitle
 \section{Abstract}
-When the graphs of functions $y=x^{\frac{1}{n}}$ and $y=x^n$ are plotted [in the domain $0 \le x \le 1$,range/co-domain $0 \le y \le 1$] then an area is carved between the two functions by the virtue of intersection of the two graphs (at 0 and 1). If we consider the area formed by the unit square [$0 \le x \le 1$ and $0 \le y \le 1$] to be 100\%, then the above mentioned `carved out area due to intersection' is a function of `$n$' and grows as the value of `$n$' grows, asymptotically reaching 100\% for n=$\infty$. The relationship between the 'carved area' and `$n$' is simply: $\Delta = (\frac{x-1}{x+1}\times{100})\%$ of the total area between the unit square formed.
+When the graphs of functions $y=x^{\frac{1}{n}}$ and $y=x^n$ are plotted [in the domain $0 \le x \le 1$,range/co-domain $0 \le y \le 1$] then an area is carved between the two functions by the virtue of intersection of the two graphs (at 0 and 1). If we consider the area formed by the unit square [$0 \le x \le 1$ and $0 \le y \le 1$] to be 100\%, then the above mentioned `carved out area due to intersection' is a function of `$n$' and grows as the value of `$n$' grows, asymptotically reaching 100\% for n=$\infty$. The relationship between the 'carved area' and `$n$' is simply: $\Delta = (\frac{n-1}{n+1}\times{100})\%$ of the total area between the unit square formed.
 \section{Derivation}
 Let us see three plots to understand the behavior of the area carved out by the intersection of two curves. Below are the curves for n=2, 3 and 10 (Figure \ref{Area_2_3_10}). 
 \begin{figure}[h!]
@@ -75,5 +75,5 @@ This observation can be turned into a plot as below (Figure \ref{n_vs_frac}).\ne
 \label{n_vs_frac}
 \end{figure}
 \newline
-As we can see this equation is a special case of  Möbius-Transformation. A Möbius-Transformation transformation is defined as $f(z) = \frac{az+b}{cz+d}$, where $ad-bc \ne 0$. In this context this function is special since $z$ is replaced by $x$ and $a=c=d=1 \ne b=-1$. Please see \url{https://math.stackexchange.com/questions/5059632/does-the-function-y-fracx-1x1-have-a-name} for some very helpful comments on this. 
+As we can see this equation $\Big(y=\frac{n-1}{n+1}\Big)$ is a special case of  Möbius-Transformation. A Möbius-Transformation transformation is defined as $f(z) = \frac{az+b}{cz+d}$, where $ad-bc \ne 0$. In this context this function is special since $z$ is replaced by $x$ and $a=c=d=1 \ne b=-1$. Please see \url{https://math.stackexchange.com/questions/5059632/does-the-function-y-fracx-1x1-have-a-name} for some very helpful comments on this. 
 \end{document}
