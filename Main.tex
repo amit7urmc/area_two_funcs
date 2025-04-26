@@ -40,7 +40,7 @@ Thus we can calculate the area as below.
 For $n=1$ there should be no area while for $n=\infty$ the area should cover the whole square intuitively. As a sanity check we can calculate the area for $n=1$ and $n=\infty$ and we find the results to be $0$ and $1$ respectively, as expected. 
 
 \section{Discussion}
-Below is a table for different values of n (from 1 to 100).\newline
+Below is a table for different values of n (from 1 to 100) for the equation $y=\frac{n-1}{n+1}$.\newline
 \begin{tabular}{|l || l |}
 	\hline
 	\textbf{n} & \textbf{fraction} \\
@@ -75,5 +75,20 @@ This observation can be turned into a plot as below (Figure \ref{n_vs_frac}).\ne
 \label{n_vs_frac}
 \end{figure}
 \newline
-As we can see this equation $\Big(y=\frac{n-1}{n+1}\Big)$ is a special case of  Möbius-Transformation. A Möbius-Transformation transformation is defined as $f(z) = \frac{az+b}{cz+d}$, where $ad-bc \ne 0$. In this context this function is special since $z$ is replaced by $x$ and $a=c=d=1 \ne b=-1$. Please see \url{https://math.stackexchange.com/questions/5059632/does-the-function-y-fracx-1x1-have-a-name} for some very helpful comments on this. 
+\newline
+There are a few interesting properties of this equation.
+\begin{enumerate}
+\item As we can see this equation $\Big(y=\frac{n-1}{n+1}\Big)$ is a special case of  Möbius-Transformation. A Möbius-Transformation is defined as $f(z) = \frac{az+b}{cz+d}$, where $ad-bc \ne 0$ and $z$ is a complex number. In this context this function is special since $z$ is replaced by $x$ and $a=c=d=1 \ne b=-1$. Please see \url{https://math.stackexchange.com/questions/5059632/does-the-function-y-fracx-1x1-have-a-name} for some very helpful comments on this.
+\item The $n^{th}$ derivative of this function is defined as: $f^{'n}\Big(\frac{x-1}{x+1}\Big) = \frac{{-1}^{(n+1)}*2n!}{{(x+1)}^{(n+1)}}$, where $1 \le n$.
+\item The fifth composition of the function with itself is the original function again [see \url{https://math.stackexchange.com/q/5059632/357360}].\newline
+\begin{align*}
+f(n) &= \frac{n-1}{n+1} \\
+f(f(n)) &= \frac{-1}{n} \\
+f(f(f(n))) &= \frac{n+1}{-n+1} \\
+f(f(f(f(n)))) &= n \\
+f(f(f(f(f(n))))) &= \frac{n-1}{n+1}
+\end{align*}
+\end{enumerate}
+ 
+ 
 \end{document}
